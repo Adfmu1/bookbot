@@ -13,3 +13,6 @@ def get_char_words(book_content: str) -> dict:
                 ind_char_count[char] += 1
                 
     return ind_char_count
+
+def dict_by_amount(dictionary: dict) -> dict:
+    return sorted(dict.items(), reverse=True, key=lambda x: x[1])
