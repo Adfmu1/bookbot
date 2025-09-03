@@ -1,6 +1,6 @@
 def get_num_words(book_content: str) -> None:
     word_count = len([word for word in book_content.split()])
-    print(f"{word_count} words found in the document")
+    return word_count
     
 def get_char_words(book_content: str) -> dict:
     ind_char_count = {}
@@ -15,4 +15,4 @@ def get_char_words(book_content: str) -> dict:
     return ind_char_count
 
 def dict_by_amount(dictionary: dict) -> dict:
-    return sorted(dict.items(), reverse=True, key=lambda x: x[1])
+    return sorted(dictionary.items(), reverse=True, key=lambda x: x[1])
